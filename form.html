@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>
+      JavaScript祭フロントエンド祭
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
+    <link href="./css/style.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">2015JavaScript祭フロントエンド祭</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="#">Home</a>
+              </li>
+              <li class="dropdown">
+                <a href="http://www.kaasan.info" class="dropdown-toggle" data-toggle="dropdown">ITかあさん<b class="caret"></b></a>
+              </li>
+            </ul>
+            <a class="btn btn-primary" href="#">ログアウト</a>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container" id="container">
+      <h3>
+        ご予約フォーム
+      </h3>
+      <div class="alert alert-error">
+        エラー項目があれば表示します。
+      </div>
+      <div class="form-group">
+        <label>
+          お名前<span style="color:red">※</span>
+        </label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>
+          ご予約の種類<span style="color:red">※</span>
+        </label>
+        <label class="radio">
+          <input type="radio">
+          席のみ
+        </label>
+        <label class="radio">
+          <input type="radio">
+          コース
+        </label>
+      </div>
+      <div class="form-group">
+        <label>
+          コース選択:
+        </label>
+        <select class="form-control">
+          <option value="">
+            選択して下さい
+          </option>
+          <option value="pizza">
+            3000円
+          </option>
+          <option value="salad">
+            4000円
+          </option>
+          <option value="pizzasalad">
+            5000円
+          </option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>
+          ご予約希望日<span style="color:red">※</span>:
+        </label>
+        <input type="date" name="date">
+      </div>
+      <div class="form-group">
+        <label>
+          人数<span style="color:red">※</span>
+        </label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>
+          メールアドレス<span style="color:red">※</span>
+        </label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>
+          電話番号<span style="color:red">※</span>
+        </label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>
+          その他ご要望:
+        </label>
+        <textarea class="form-control"></textarea>
+      </div>
+      <button type="submit" class="btn btn-default">
+      送信
+      </button>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">Created by ITかあさん & JavaScript祭 Project.</p>
+      </div>
+    </div>
+  </body>
+
+</html>
