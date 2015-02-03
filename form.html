@@ -16,7 +16,8 @@
     <script>
       $(document).ready(function(){
         $("form").submit(function() {
-          alert('aa');
+          $("#form_error").show();
+          return false;
         });
       });
     </script>
@@ -51,7 +52,7 @@
       <h3>
         ご予約フォーム
       </h3>
-      <div class="alert alert-error">
+      <div class="alert alert-error" id="form_error" style="display:none;">
         エラー項目があれば表示します。
       </div>
       <form action="" method="post">
