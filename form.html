@@ -19,7 +19,10 @@
           $('form .required').each(
           function(index){
             if($(this).val() == ""){
-              $(this).after("<span style='color:red'>必須項目です</span>");
+              if(!$(this).hasClass("error")){
+                $(this).addClass('error');
+                $(this).after("<span style='color:red'>必須項目です</span>");
+              }
             }
           }
         );
