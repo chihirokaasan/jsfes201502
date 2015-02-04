@@ -27,8 +27,11 @@
           }
         );
         if(!$('input:radio[name=reserve]').is(':checked')){
-          alert('予約の種類を選択してください');
-          return false;
+          if(!$('#reserveLabel').hasClass("error")){
+            $('#reserveLabel').addClass('error');
+            $('#reserveLabel').after("<span style='color:red'>必須項目です</span>");
+            return false;
+          }
         }
         return false;
         });
@@ -76,7 +79,7 @@
           <input type="text" class="form-control required">
         </div>
         <div class="form-group">
-          <label>
+          <label id="reserveLabel">
             ご予約の種類<span style="color:red">※</span>
           </label>
           <label class="radio">
