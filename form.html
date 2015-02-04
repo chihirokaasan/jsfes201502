@@ -20,8 +20,12 @@
           function(index){  
             alert(index);
           }
-        )
+        );
+        if(!$('input:radio[name=reserve]').is(':checked')){
+          alert('予約の種類を選択してください');
           return false;
+        }
+        return false;
         });
       });
     </script>
