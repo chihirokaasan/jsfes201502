@@ -23,6 +23,12 @@
             }
           }
         );
+        $('input:radio[name=reserve]').click(function () {
+          if($('#reserveLabel').hasClass("error")){
+            $('#reserveLabel').next().remove();
+            $('#reserveLabel').removeClass('error');
+          }
+        });
         $("form").submit(function() {
           $('form .required').each(
           function(index){
