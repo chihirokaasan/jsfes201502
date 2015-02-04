@@ -19,6 +19,7 @@
           function(){
             if($(this).hasClass("error") && $(this).val() != ""){
               $(this).next().remove();
+              $(this).removeClass('error');
             }
           }
         );
