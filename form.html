@@ -18,7 +18,7 @@
         $("form").submit(function() {
           $('form .required').each(
           function(index){  
-            alert(index);
+            $(this).after("<span style='color:red'>必須項目です</span>");
           }
         );
         if(!$('input:radio[name=reserve]').is(':checked')){
