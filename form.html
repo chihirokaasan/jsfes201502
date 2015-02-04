@@ -16,11 +16,12 @@
     <script>
       $(document).ready(function(){
         $("form").submit(function() {
-          if($('form .required').val() == ''){
-            alert('未入力の項目があります');
-            $("#form_error").show();
-            return false;
+          $('form .required').each(
+          function(index){  
+            alert(index);
           }
+        )
+          return false;
         });
       });
     </script>
