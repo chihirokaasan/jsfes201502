@@ -89,6 +89,10 @@
             }
           }
         );
+        var error_length = $(".error").length + $(".email_error").length + $(".num_error").length;
+        if(error_length == 0) {
+          return true;
+        }
         return false;
         });
         //radioボタンでコースが選択されたらコース選択のプルダウンを表示する
@@ -135,7 +139,7 @@
       <div class="alert alert-error" id="form_error" style="display:none;">
         入力内容をご確認下さい。
       </div>
-      <form action="" method="post">
+      <form action="send.html" method="post">
         <div class="form-group">
            <label>
             お名前<span style="color:red">※</span>
