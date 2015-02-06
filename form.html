@@ -90,6 +90,10 @@
         );
         return false;
         });
+        //radioボタンでコースが選択されたらコース選択のプルダウンを表示する
+        $("#course").click(function () {
+          $('#course_select').show();
+        });
       });
     </script>
   </head>
@@ -141,12 +145,12 @@
             <input name="reserve" type="radio">
             席のみ
           </label>
-          <label class="radio">
+          <label class="radio" id="course">
             <input name="reserve" type="radio">
             コース
           </label>
         </div>
-        <div class="form-group">
+        <div class="form-group" style="display:none;" id="course_select">
           <label>
             コース選択:
           </label>
