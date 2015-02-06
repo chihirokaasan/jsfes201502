@@ -94,6 +94,10 @@
         $("#course").click(function () {
           $('#course_select').show();
         });
+        //radioボタンでコースが選択されたらコース選択のプルダウンを表示する
+        $("#seat").click(function () {
+          $('#course_select').hide();
+        });
       });
     </script>
   </head>
@@ -141,7 +145,7 @@
           <label id="reserveLabel">
             ご予約の種類<span style="color:red">※</span>
           </label>
-          <label class="radio">
+          <label class="radio" id="seat">
             <input name="reserve" type="radio">
             席のみ
           </label>
